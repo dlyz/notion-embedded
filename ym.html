@@ -1,0 +1,7 @@
+<iframe id="q" frameborder="0" style="border:none;width:100%;height:210px;" width="100%" height="210">
+</iframe>
+<script>
+	const urlParams = new URLSearchParams(window.location.search);
+	const track = urlParams.get('track');
+	document.getElementById("q").src = `https://music.yandex.ru/iframe/track/${track}`;
+</script>
