@@ -2,6 +2,6 @@
 </iframe>
 <script>
 	const urlParams = new URLSearchParams(window.location.search);
-	const track = urlParams.get('track');
-	document.getElementById("q").src = `https://music.yandex.ru/iframe/track/${track}`;
+	const path = urlParams.get('path');
+	document.getElementById("q").src = `https://music.yandex.ru/iframe/${path}`;
 </script>
